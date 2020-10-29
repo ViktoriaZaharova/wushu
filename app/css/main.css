@@ -1,0 +1,343 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #000; }
+
+html, body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 43px;
+  font-size: 14px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  border-radius: 3px; }
+
+.btn-border {
+  -webkit-box-shadow: 0 4px 4px rgba(230, 203, 1, 0.2);
+          box-shadow: 0 4px 4px rgba(230, 203, 1, 0.2);
+  border: 2px solid #FFE100;
+  background: #fff; }
+  .btn-border:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF5AC), to(#FFE100));
+    background: linear-gradient(180deg, #FFF5AC 0%, #FFE100 100%); }
+
+.btn-accent {
+  -webkit-box-shadow: 0px 4px 4px rgba(230, 203, 1, 0.2);
+          box-shadow: 0px 4px 4px rgba(230, 203, 1, 0.2);
+  background: #FFE100; }
+  .btn-accent:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF5AC), to(#FFE100));
+    background: linear-gradient(180deg, #FFF5AC 0%, #FFE100 100%); }
+
+.phone {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap; }
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 0 17px; }
+
+h2 {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 auto 55px; }
+
+.description-title {
+  line-height: 19px; }
+
+header {
+  border-bottom: 1px solid #C4C4C4; }
+  header .btn {
+    height: 38px;
+    max-width: 139px;
+    min-width: 139px;
+    font-size: 12px; }
+
+.header-top {
+  padding: 2px 0; }
+  .header-top .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.header-bottom {
+  border-top: 1px solid #C4C4C4;
+  padding: 17px 0; }
+  .header-bottom .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.name-company {
+  margin: 0 auto 0 29px;
+  font-size: 12px; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 69px;
+  width: 100%; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .list-social li {
+    margin: 0 9px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      width: 19px;
+      height: 19px; }
+
+.vk-links {
+  background: url("../img/vk2.png") no-repeat center;
+    background-size: 100%; }
+  .vk-links:hover {
+    background: url("../img/vk.png") no-repeat center;
+      background-size: 100%; }
+
+.inst-links {
+  background: url("../img/insta2.png") no-repeat center;
+    background-size: 100%; }
+  .inst-links:hover {
+    background: url("../img/insta.png") no-repeat center;
+      background-size: 100%; }
+
+.whatsapp-links {
+  background: url("../img/whatsapp2.png") no-repeat center;
+    background-size: 100%; }
+  .whatsapp-links:hover {
+    background: url("../img/whatsapp.png") no-repeat center;
+      background-size: 100%; }
+
+.box-contacts {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 8px;
+  margin: 0 25px;
+  white-space: nowrap; }
+  .box-contacts p {
+    margin: 8px auto 0; }
+
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .menu li a {
+    font-size: 14px;
+    color: #000; }
+    .menu li a:hover {
+      color: #293A92; }
+
+main {
+  background: url("../img/bg1.png") no-repeat center;
+    background-size: cover;
+  padding: 43px 0 0; }
+  main .btn {
+    max-width: 202px;
+    margin: 20px 0 0; }
+
+.main-img {
+  margin: -130px auto 0;
+  max-width: 1013px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.main-content {
+  max-width: 410px;
+  width: 100%; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
