@@ -1043,6 +1043,7 @@ strong {
   cursor: pointer; }
   .block_title:after {
     content: '+';
+    min-width: 28px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -1783,7 +1784,24 @@ button {
     .gallery .tabs__caption li {
       margin: 0 auto 11px; }
       .gallery .tabs__caption li:last-child {
-        margin: 0 auto; } }
+        margin: 0 auto; }
+  .price-wrapper__nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .price-box {
+    width: 293px; }
+    .price-box h3 {
+      font-size: 24px; } }
+
+@media only screen and (max-width: 620px) {
+  .logo-footer {
+    width: 64px;
+    height: 64px;
+    padding: 9px;
+    margin: 0 auto -32px; }
+  .footer-top {
+    padding: 51px 0 0; } }
 
 @media only screen and (max-width: 575px) {
   .main-content {
@@ -1791,7 +1809,19 @@ button {
   .about {
     padding: 0 0 40px; }
   .p-100 {
-    padding: 93px 0; } }
+    padding: 93px 0; }
+  .footer-bottom {
+    padding: 49px 0 92px; }
+    .footer-bottom .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  footer .btn {
+    margin: 65px auto 0; } }
 
 @media only screen and (max-width: 480px) {
   .description-title {
@@ -1847,7 +1877,16 @@ button {
     z-index: 1;
     opacity: 1; }
   .gallery-box:hover:before, .gallery-box:hover:after {
-    opacity: 0; } }
+    opacity: 0; }
+  .panel_heading {
+    padding: 0 17px 0 10px;
+    margin: 0 auto 14px; }
+  .number-question {
+    font-size: 16px; }
+  .block_title {
+    font-size: 15px; }
+  footer {
+    margin: 93px 0 62px; } }
 
 @media only screen and (max-width: 380px) {
   .about-box {

@@ -197,6 +197,32 @@ $('.about-slider').slick({
     ]
 });
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 768) {
+        $('.price-wrapper:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 2,
+            adaptiveHeight: true,
+            variableWidth: true,
+            appendArrows: '.price-wrapper__nav',
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    } else {
+        $(".price-wrapper.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 $("[name='phone']").mask("+7 (999) 999-99-99");
 
 
