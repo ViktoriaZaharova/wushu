@@ -4,6 +4,24 @@ $("body").on("click", ".btn-scroll-top", function () {
     }, "slow")
 });
 
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('.btn-scroll-top').fadeIn();
+    } else {
+        $('.btn-scroll-top').fadeOut();
+    }
+});
+
 
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
     $(this)
@@ -11,9 +29,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
-$('.reviews-box').click(function () {
-    $(this).find('.reviews-overlay').fadeOut();
-});
+
 
 $('.reviews-wrapper').slick({
     slidesToShow: 5,

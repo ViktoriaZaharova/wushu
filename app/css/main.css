@@ -1118,39 +1118,10 @@ strong {
   overflow: hidden;
   margin: 0 40px 0 0; }
 
-.reviews-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(41, 58, 146, 0.6);
-  cursor: pointer; }
-
 .fullscreen-bg__video {
   width: 100%;
   height: 100%;
   outline: none; }
-
-.icon-play {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
 
 .slider-nav {
   width: 100%;
@@ -1215,38 +1186,10 @@ strong {
     background: url("../img/arrow-left.svg") no-repeat center;
       background-size: contain; }
 
-.partners-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.partners-box {
-  max-width: 243px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .partners-box img {
-    width: 100%; }
-
 footer {
   background: #293A92;
   color: #fff;
-  margin: 0 0 72px; }
+  margin: 100px 0 72px; }
   footer a {
     color: #fff; }
   footer h6 {
@@ -1319,9 +1262,10 @@ footer {
   background: #293A92; }
 
 .btn-scroll-top {
-  position: absolute;
-  right: 0;
-  top: -43px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 3;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1429,8 +1373,10 @@ footer {
   width: 100%;
   margin: 0 auto; }
   .form button {
-    margin: 54px auto 26px;
+    margin: 0 auto;
     max-width: 160px; }
+  .form .checkbox {
+    margin: 54px auto 26px; }
 
 label {
   display: block;
