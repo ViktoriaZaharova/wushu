@@ -225,6 +225,8 @@ $(window).on('load resize', function() {
 
 $("[name='phone']").mask("+7 (999) 999-99-99");
 
+new WOW().init();
+
 
 // модальные окна (несколько)
 $(document).ready(function () {
