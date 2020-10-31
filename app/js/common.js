@@ -10,6 +10,7 @@ $('.go_to').click(function () {
         $('html, body').animate({
             scrollTop: $(scroll_el).offset().top
         }, 500);
+        $('.mobile-menu').fadeOut();
     }
     return false;
 });
@@ -29,7 +30,13 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+$('.btn-burger').click(function () {
+   $('.mobile-menu').fadeToggle();
+});
 
+$('.btn-close').click(function () {
+    $('.mobile-menu').fadeOut();
+});
 
 $('.reviews-wrapper').slick({
     slidesToShow: 5,

@@ -3,53 +3,107 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  /**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  header .menu li a
+    font-size: 13px
 
+  .name-company
+    margin: 0 auto 0 10px
+
+  .box-contacts
+    margin: 0 15px
+
+  .main-img
+    margin: 0 auto
+
+  .tabs__caption
+    font-size: 13px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  .btn-burger
+    display: block
 
+  .header-bottom
+    display: none
+
+  header
+    .btn, .phone
+      display: none
+
+  .box-contacts
+    margin: 0
+    p
+      display: none
+
+  .header-box
+    margin: 0 auto
+
+  .name-company
+    margin: 0 auto 12px
+    padding: 20px 0 15px
+    width: 100%
+    order: -1
+    text-align: center
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+      width: calc(100% + 30px)
+      height: 1px
+      background: #C4C4C4
+
+  .logo
+    max-width: 49px
+
+  .header-top
+    padding: 0 0 10px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 575px)
+  .main-content
+    max-width: none
+
+@media only screen and (max-width: 480px)
+  .description-title
+    display: none
+
+  h1
+    font-size: 23px
+    text-align: center
+    margin: 0 auto
+
+  main
+    background: url("../img/bg1-mobile.png") no-repeat center
+      size: cover
+    padding: 42px 0 54px
+    .btn
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translate(-50%,0)
+      margin: 0 auto
+
+  .main-img
+    margin: 71px -40px 86px
+    min-width: 401px
+
+  .main-content
+    position: initial
+
+  .modal__wrapper
+    padding: 40px 30px
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width: 320px)
+  .main-img
+    margin: 71px 0 86px -65px

@@ -661,15 +661,6 @@ strong {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative; }
-  .goals-wrapper:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    width: 1px;
-    height: 100%; }
 
 .goals-box {
   width: 100%;
@@ -1493,6 +1484,56 @@ button {
     background: url("../img/check.svg") no-repeat center;
       background-size: contain; }
 
+.mobile-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 33px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .mobile-menu .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mobile-menu .menu li {
+      margin: 0 auto 15px; }
+  .mobile-menu .phone {
+    margin: 0 auto;
+    text-align: center; }
+  .mobile-menu .btn {
+    max-width: 139px;
+    margin: 33px auto 0; }
+
+.btn-close {
+  width: 10px;
+  height: 10px;
+  margin: 0 0 3px auto;
+  cursor: pointer;
+  opacity: .5; }
+
+.btn-burger {
+  display: none;
+  width: 30px; }
+  .btn-burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #C4C4C4;
+    margin: 0 0 5px; }
+    .btn-burger span:last-child {
+      margin: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1500,37 +1541,87 @@ button {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  header .menu li a {
+    font-size: 13px; }
+  .name-company {
+    margin: 0 auto 0 10px; }
+  .box-contacts {
+    margin: 0 15px; }
+  .main-img {
+    margin: 0 auto; }
+  .tabs__caption {
+    font-size: 13px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .btn-burger {
+    display: block; }
+  .header-bottom {
+    display: none; }
+  header .btn, header .phone {
+    display: none; }
+  .box-contacts {
+    margin: 0; }
+    .box-contacts p {
+      display: none; }
+  .header-box {
+    margin: 0 auto; }
+  .name-company {
+    margin: 0 auto 12px;
+    padding: 20px 0 15px;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    text-align: center;
+    position: relative; }
+    .name-company:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      bottom: 0;
+      width: calc(100% + 30px);
+      height: 1px;
+      background: #C4C4C4; }
+  .logo {
+    max-width: 49px; }
+  .header-top {
+    padding: 0 0 10px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+  .main-content {
+    max-width: none; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .description-title {
+    display: none; }
+  h1 {
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto; }
+  main {
+    background: url("../img/bg1-mobile.png") no-repeat center;
+      background-size: cover;
+    padding: 42px 0 54px; }
+    main .btn {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      margin: 0 auto; }
+  .main-img {
+    margin: 71px -40px 86px;
+    min-width: 401px; }
+  .main-content {
+    position: initial; }
+  .modal__wrapper {
+    padding: 40px 30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+  .main-img {
+    margin: 71px 0 86px -65px; } }
