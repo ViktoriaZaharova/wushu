@@ -58,7 +58,17 @@ $('.reviews-wrapper').slick({
     appendArrows: '.reviews-wrapper__nav',
     appendDots: '.reviews-wrapper__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.video-wrapper').slick({
@@ -69,7 +79,17 @@ $('.video-wrapper').slick({
     appendArrows: '.video-wrapper__nav',
     appendDots: '.video-wrapper__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.awards-wrapper').slick({
@@ -80,7 +100,17 @@ $('.awards-wrapper').slick({
     appendArrows: '.awards-wrapper__nav',
     appendDots: '.awards-wrapper__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.gallery-slider1').slick({
@@ -91,7 +121,17 @@ $('.gallery-slider1').slick({
     appendArrows: '.gallery-slider1__nav',
     appendDots: '.gallery-slider1__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.gallery-slider2').slick({
@@ -102,7 +142,17 @@ $('.gallery-slider2').slick({
     appendArrows: '.gallery-slider2__nav',
     appendDots: '.gallery-slider2__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.gallery-slider3').slick({
@@ -113,7 +163,17 @@ $('.gallery-slider3').slick({
     appendArrows: '.gallery-slider3__nav',
     appendDots: '.gallery-slider3__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.about-slider').slick({
@@ -124,8 +184,18 @@ $('.about-slider').slick({
     appendArrows: '.about-slider__nav',
     appendDots: '.about-slider__nav',
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
-})
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+                variableWidth: false,
+            }
+        }
+    ]
+});
 
 $("[name='phone']").mask("+7 (999) 999-99-99");
 
