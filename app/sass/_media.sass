@@ -1,8 +1,6 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px)
   /**/
 
@@ -23,6 +21,28 @@
 
   .tabs__caption
     font-size: 13px
+
+  .about-content
+    max-width: none
+    width: 100%
+    padding: 0
+    h5
+      text-align: center
+
+  .about-wrapper
+    width: 100%
+
+  .about-masters
+    font-size: 14px
+    .icon
+      margin: 0 15px 0 0
+
+  .about-slider-wrap
+    width: 100%
+    margin: 40px auto 0
+
+  .about-slider__nav
+    max-width: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -67,7 +87,34 @@
   .header-top
     padding: 0 0 10px
 
-/* Extra Small Devices, Phones */
+  .advantages
+    .tabs__caption
+      display: none
+
+  .tabs-click
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px solid transparent
+      bottom: none
+    margin: 0 auto -2px
+    position: relative
+    z-index: 1
+
+  .tabs-click.active
+    background: #F9F9F9
+    color: $blue
+    border: 2px solid #FFE100
+      bottom: none
+
+  .tabs-click-content
+    padding: 45px 15px 23px
+    min-height: auto
+
+  .advantages
+    padding: 56px 0 93px
+
+
 @media only screen and (max-width: 575px)
   .main-content
     max-width: none
@@ -80,6 +127,10 @@
     font-size: 23px
     text-align: center
     margin: 0 auto
+
+  h2
+    font-size: 23px
+    margin: 0 auto 34px
 
   main
     background: url("../img/bg1-mobile.png") no-repeat center
@@ -103,7 +154,6 @@
     padding: 40px 30px
 
 
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
   .main-img
     margin: 71px 0 86px -65px

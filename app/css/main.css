@@ -1534,8 +1534,17 @@ button {
     .btn-burger span:last-child {
       margin: 0; }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
+.tabs-click {
+  max-width: 232px;
+  margin: 0 auto;
+  height: 67px;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  display: none; }
+
 @media only screen and (max-width: 1200px) {
   /**/ }
 
@@ -1550,7 +1559,24 @@ button {
   .main-img {
     margin: 0 auto; }
   .tabs__caption {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .about-content {
+    max-width: none;
+    width: 100%;
+    padding: 0; }
+    .about-content h5 {
+      text-align: center; }
+  .about-wrapper {
+    width: 100%; }
+  .about-masters {
+    font-size: 14px; }
+    .about-masters .icon {
+      margin: 0 15px 0 0; }
+  .about-slider-wrap {
+    width: 100%;
+    margin: 40px auto 0; }
+  .about-slider__nav {
+    max-width: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1588,9 +1614,35 @@ button {
   .logo {
     max-width: 49px; }
   .header-top {
-    padding: 0 0 10px; } }
+    padding: 0 0 10px; }
+  .advantages .tabs__caption {
+    display: none; }
+  .tabs-click {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px solid transparent;
+      border-bottom: none;
+    margin: 0 auto -2px;
+    position: relative;
+    z-index: 1; }
+  .tabs-click.active {
+    background: #F9F9F9;
+    color: #293A92;
+    border: 2px solid #FFE100;
+      border-bottom: none; }
+  .tabs-click-content {
+    padding: 45px 15px 23px;
+    min-height: auto; }
+  .advantages {
+    padding: 56px 0 93px; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
   .main-content {
     max-width: none; } }
@@ -1602,6 +1654,9 @@ button {
     font-size: 23px;
     text-align: center;
     margin: 0 auto; }
+  h2 {
+    font-size: 23px;
+    margin: 0 auto 34px; }
   main {
     background: url("../img/bg1-mobile.png") no-repeat center;
       background-size: cover;
@@ -1621,7 +1676,6 @@ button {
   .modal__wrapper {
     padding: 40px 30px; } }
 
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .main-img {
     margin: 71px 0 86px -65px; } }

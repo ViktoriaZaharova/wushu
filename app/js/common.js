@@ -30,6 +30,19 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
 
+
+$('.tabs-click').click(function () {
+    $('.tabs-click, .tabs-click-content').not(this).removeClass('active');
+    $(this).addClass('active').next().addClass('active');
+});
+
+// accordeon
+$('.panel_heading .block_title').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $('.panel_heading .block_title').not(this).removeClass('in').next().slideUp();
+});
+
+
 $('.btn-burger').click(function () {
    $('.mobile-menu').fadeToggle();
 });
@@ -116,11 +129,6 @@ $('.about-slider').slick({
 
 $("[name='phone']").mask("+7 (999) 999-99-99");
 
-// accordeon
-$('.panel_heading .block_title').click(function () {
-    $(this).toggleClass('in').next().slideToggle();
-    $('.panel_heading .block_title').not(this).removeClass('in').next().slideUp();
-});
 
 // модальные окна (несколько)
 $(document).ready(function () {
