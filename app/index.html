@@ -1007,19 +1007,28 @@
 
 <div class="modal__div" id="modal__callback">
     <div class="modal__wrapper">
-        <span class="modal__close"><i class="fa fa-times" aria-hidden="true"></i></span>
-        <h2>Обратный звонок</h2>
+        <span class="modal__close"><img src="img/close.png" alt=""></span>
+        <h2>Заказать звонок</h2>
 
-        <form method="post" class="callback__form modal-form">
+        <form method="post" class="form">
+            <input type="text" value="Заказать звонок" name="theme_form" hidden>
 
-            <label><input type="text" name="name" placeholder="Ваше имя"></label>
+            <label>
+                <input type="text" placeholder="Ваше имя" required name="name">
+                <span class="input-icon"><img src="img/user.png" alt=""></span>
+            </label>
 
-            <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
-
-            <label class="label-message"><textarea name="message"
-                                                   placeholder="Введите Ваше сообщение"></textarea></label>
-
-            <button type="submit" class="btn-accent"><span class="wrapper">Отправить</span></button>
+            <label>
+                <input type="text" placeholder="Ваше имя" required name="phone">
+                <span class="input-icon"><img src="img/phone.png" alt=""></span>
+            </label>
+            <button class="btn btn-accent" type="submit">Отправить</button>
+            <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label">Я соглашаюсь на обработку <a href="#"
+                                                                 class="links">персональных данных</a></span>
+            </label>
         </form>
     </div>
 </div>
@@ -1027,7 +1036,7 @@
 <div class="modal__div" id="thanks__modal">
     <div class="modal__wrapper">
         <span class="modal__close"><img src="img/close.png" alt=""></span>
-        <h3>Спасибо!</h3>
+        <h2>Спасибо!</h2>
         <div class="box-text">
             <p>Ваша заявка успешно принята.</p>
             <p>Мы свяжемся с Вами в ближайшее время.</p>

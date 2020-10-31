@@ -489,12 +489,142 @@ strong {
         -ms-flex-order: 1;
             order: 1; }
 
+.participation {
+  padding: 0 0 130px; }
+  .participation h2 {
+    font-size: 24px;
+    color: #293A92;
+    text-transform: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
+
 .participation-description {
   max-width: 700px;
   width: 100%;
   font-size: 18px;
   font-weight: 500;
-  color: #293A92; }
+  color: #293A92;
+  margin: -19px 0 0; }
+
+.participation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  width: 100%; }
+
+.participation-image {
+  margin: 0 auto 0 0;
+  min-width: 1470px;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.participation-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 170px; }
+
+.participation-box {
+  font-weight: 500;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 500px; }
+  .participation-box:last-child {
+    margin: 0 40px 76px 0;
+    max-width: 450px; }
+    .participation-box:last-child .number {
+      margin: 10px 0 0; }
+    .participation-box:last-child p {
+      padding: 0 0 0 35px; }
+  .participation-box:nth-child(4) {
+    max-width: 550px;
+    margin: 0 100px -35px 0; }
+    .participation-box:nth-child(4) .number {
+      margin: 15px 0 0; }
+    .participation-box:nth-child(4) p {
+      padding: 0 0 0 35px; }
+  .participation-box:nth-child(3) {
+    max-width: 550px;
+    margin: 0 265px -63px 0; }
+  .participation-box:nth-child(2) {
+    margin: 0 50% -55px 0; }
+  .participation-box:first-child {
+    margin: 0 73.5% -64px 0; }
+
+.number {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #FFE100;
+  width: 44px;
+  height: 44px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #293A92;
+  margin: 50px 0 0; }
+  .number:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 33px;
+    top: -33px;
+    width: 1px;
+    background: #FFE100; }
+  .number span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0px 4px 10px rgba(41, 58, 146, 0.25);
+            box-shadow: 0px 4px 10px rgba(41, 58, 146, 0.25);
+    border-radius: 50%;
+    background: #FBFBFB;
+    width: 100%;
+    height: 100%; }
 
 .callback-section-five .callback-img {
   max-width: 534px;
@@ -1264,6 +1394,21 @@ footer {
   position: relative;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .modal__wrapper h2 {
+    text-transform: none;
+    margin: 0 auto 40px;
+    font-size: 24px; }
+  .modal__wrapper .box-text {
+    text-align: center;
+    font-size: 14px; }
+    .modal__wrapper .box-text p {
+      margin: 0 auto 16px; }
+      .modal__wrapper .box-text p:last-child {
+        margin: 0 auto; }
+
+.btn-close-modal {
+  max-width: 160px;
+  margin: 44px auto 0; }
 
 .overlay {
   z-index: 100;

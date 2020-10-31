@@ -424,12 +424,108 @@ strong
     order: 1
 
 //participation
+.participation
+  padding: 0 0 130px
+  h2
+    font-size: 24px
+    color: $blue
+    text-transform: none
+    font-family: $default-font
+    font-weight: 500
+
 .participation-description
   max-width: 700px
   width: 100%
   font-size: 18px
   font-weight: 500
   color: $blue
+  margin: -19px 0 0
+
+.participation-wrapper
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  width: 100%
+
+.participation-image
+  margin: 0 auto 0 0
+  min-width: 1470px
+  position: absolute
+  right: 0
+  bottom: 0
+
+.participation-content
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-end
+  flex-direction: column
+  align-items: flex-end
+  position: relative
+  z-index: 1
+  margin: 0 0 170px
+
+.participation-box
+  font-weight: 500
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  max-width: 500px
+  &:last-child
+    margin: 0 40px 76px 0
+    max-width: 450px
+    .number
+      margin: 10px 0 0
+    p
+      padding: 0 0 0 35px
+  &:nth-child(4)
+    max-width: 550px
+    margin: 0 100px -35px 0
+    .number
+      margin: 15px 0 0
+    p
+      padding: 0 0 0 35px
+  &:nth-child(3)
+    max-width: 550px
+    margin: 0 265px -63px 0
+  &:nth-child(2)
+    margin: 0 50% -55px 0
+  &:first-child
+    margin: 0 73.5% -64px 0
+
+.number
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  border: 1px solid #FFE100
+  width: 44px
+  height: 44px
+  padding: 5px
+  font-size: 14px
+  font-weight: 500
+  color: $blue
+  margin: 50px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    height: 33px
+    top: -33px
+    width: 1px
+    background: $accent
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0px 4px 10px rgba(41, 58, 146, 0.25)
+    border-radius: 50%
+    background: #FBFBFB
+    width: 100%
+    height: 100%
 
 
 //callback-section-five
@@ -1099,6 +1195,22 @@ footer
   box-sizing: border-box
   position: relative
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  h2
+    text-transform: none
+    margin: 0 auto 40px
+    font-size: 24px
+
+  .box-text
+    text-align: center
+    font-size: 14px
+    p
+      margin: 0 auto 16px
+      &:last-child
+        margin: 0 auto
+
+.btn-close-modal
+  max-width: 160px
+  margin: 44px auto 0
 
 
 .overlay
