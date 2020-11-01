@@ -287,7 +287,8 @@ header {
     font-size: 14px;
     color: #000; }
     .menu li a:hover {
-      color: #293A92; }
+      color: #293A92;
+      text-decoration: underline; }
 
 main {
   background: url("../img/bg1.png") no-repeat center;
@@ -1886,7 +1887,11 @@ button {
   .block_title {
     font-size: 15px; }
   footer {
-    margin: 93px 0 62px; } }
+    margin: 93px 0 62px; }
+  .price {
+    padding: 93px 0 0; }
+  .callback-section-three {
+    margin: 0; } }
 
 @media only screen and (max-width: 380px) {
   .about-box {
