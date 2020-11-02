@@ -271,7 +271,6 @@ $(".form").submit(function () {
         data: $(this).serialize()
     }).done(function () {
         $(this).find("input").val("");
-        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
 
         $('.modal__div').css('display', 'none').animate({
             opacity: 0,
